@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Generate Random Password</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="https://cdn.jsdelivr.net/npm/profanity-cleaner@latest"></script>
+        <script src="generate.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body onresize="validLength(true)">
+        <br>
+            <label>abc &gt; <input type="checkbox" id="abc" checked></label>
+            <label>ABC &gt; <input type="checkbox" id="ABC" checked></label>
+            <label>Numbers &gt; <input type="checkbox" id="numbers" checked></label>
+            <label>Symbols &gt; <input type="checkbox" id="symbols" checked></label>
+            <label>Length &gt; <input type="number" id="length" min="1" max="30" value="20" onchange="validLength()" style="width:fit-content;"></label>
+
+        <button id="generaterandompassword"> Generate Random Password </button>
+
+        <textarea id="output" readonly></textarea>
+
+        <script src="script.js"></script>
+    </body>
+</html>
