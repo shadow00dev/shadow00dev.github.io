@@ -9,3 +9,9 @@ embed {width: 100%;}
 .unselectable{user-select: none;-webkit-user-select: none;-moz-user-select: none;}
 .center {display:flex;align-items: center;justify-content: center;text-align: center;}
 .rows {display:flex;flex-direction: column;}
+
+@media (max-width: 300px) {
+    #dot {
+        height: 360px;
+    }
+}
