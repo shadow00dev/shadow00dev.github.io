@@ -1,10 +1,11 @@
-header{font-size: clamp(2vw, 20px, 100px);font-style: italic;padding-bottom: 1%}
-img {height: auto;width:10%;min-width: 150px;margin-bottom: 20px;}
 body, button {background-color: black;color:white;}
-button {height: 30px;width:80vw;min-width: 100px;border: 1px solid white;border-radius: 5px;display:grid;margin: 15px;place-content: center;cursor:pointer}
-p {font-size: 20px;}
+header, p {overflow: hidden;text-overflow: ellipsis;white-space:nowrap;}
+
+header{font-size: clamp(2vw, 20px, 100px);font-style: italic;padding-bottom: 1%;}
+img {height: auto;width:15vw;min-width: 64px;;margin-bottom: 20px;}
+button {height: 30px;width:80vw;max-width: 1000px;border: 1px solid white;border-radius: 5px;display:grid;margin: 15px;place-content: center;cursor:pointer}
+p {font-size: 20px;position: relative;bottom: 10px;}
 
 .unselectable {user-select: none;-webkit-user-select: none;-moz-user-select: none;pointer-events: none;}
-.center {display: flex;justify-content: center;}
+.center {display:flex;align-items: center;justify-content: center;}
 .rows {display:flex;flex-direction: column;}
-
