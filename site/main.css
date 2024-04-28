@@ -4,7 +4,10 @@ header, a {overflow: hidden;text-overflow: ellipsis;white-space:nowrap;}
 header{font-size: 3em;font-style: italic;padding-bottom: 1%;}
 img {height: auto;width:15vw;min-width: 64px;;margin-bottom: 20px;pointer-events: none;}
 a {height: 30px;width:80vw;max-width: 1000px;border: 1px solid white;border-radius: 5px;margin: 15px;font-size: 20px;text-decoration: none;}
-a:hover {background-color: rgba(255, 255, 255, 0.18);border-radius: 2px;}
+a:hover, a:focus-visible  {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 2px;
+}
 .unselectable{user-select: none;-webkit-user-select: none;-moz-user-select: none;}
 .center {display:flex;align-items: center;justify-content: center;text-align: center;}
 .rows {display:flex;flex-direction: column;}
